@@ -1,0 +1,84 @@
+
+.div1
+{
+border: 1px solid;
+    border-radius: 16px 0 0;
+    box-shadow: 5px 8px 1px 1px;
+    height: 529px;
+    margin: 27px 0 0 188px;
+    width: 995px;
+	background-color:#FFFFFF;
+	}
+	
+.imglogo
+{
+border: 1px solid black;
+    margin: 10px 0 0 11px;
+}
+.h1
+{
+border: 2px solid;
+    border-radius: 14px 0;
+    box-shadow: 8px 7px 2px 2px;
+    margin: -36px 323px 0 272px;
+    text-align: center;
+}
+
+.hr1
+{
+ background: none repeat scroll 0 0 red;
+    height: 10px;
+    margin: 26px 0 0 -1px;
+    width: 497px;
+}
+
+.hr2
+{
+background: none repeat scroll 0 0 blue;
+    height: 10px;
+    margin: -10px 0 0 495px;
+}
+.nulogo
+{
+ border: 1px dotted;
+    height: 88px;
+   margin: -106px 0 0 887px;
+}
+
+.table1
+{
+ margin: 11px 0 0 251px;
+}
+.p1
+{
+font-family: Comic Sans MS;
+    font-size: 16px;
+    margin: 0 0 0 373px;
+}
+
+.p2
+{
+font-family: Comic Sans MS;
+    font-size: 16px;
+    margin: 0 0 0 442px;
+	color:red;
+	
+}
+.div2
+{
+border-right:30px solid #f1da8a;
+border-bottom:30px solid #f1da8a;
+margin: 1px 0 0;
+}
+
+.family
+{
+ font-family:cursive;
+}
+
+.div4
+{
+background-color: #f1da8a;
+ 
+}
+

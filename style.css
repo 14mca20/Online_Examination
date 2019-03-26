@@ -1,0 +1,125 @@
+
+
+
+
+
+.div1
+{
+background-color: #ffffff;
+    border: 1px solid #000000;
+    border-radius: 19px;
+    box-shadow: 3px 3px 2px 2px;
+    height: 528px;
+    margin: 74px 0 0 365px;
+    width: 600px;
+}
+.title
+{
+ font-family: Lucida Console;
+    font-size: 15px;
+   margin: 19px 0 42px 97px;
+}
+.img1
+{   
+     margin: 9px 2px -7px 6px;
+	}
+
+.hr1
+{margin: 31px 300px 0 0;
+height:12px;
+ background-color: red;
+}
+.hr2
+{
+ background-color: blue;
+    height: 12px;
+    margin: -12px 0 0 300px;
+}
+.h4
+{
+color: slategray;
+    font-family: Trebuchet MS;
+    font-size: 11px;
+    margin: -13px 0 8px 242px;
+}
+.hr3
+{
+border:1px solid;
+color:black;
+
+}
+
+.hr4{
+border:1px solid;
+color:black;
+margin: 0 0 19px;
+}
+
+.div5
+{
+
+
+}
+.rules{
+color: tomato;
+    font-family: Helvetica;
+    font-size: 11px;
+    font-weight: bolder;
+    margin: 0 0 0 185px;}
+	
+.li1
+{
+ font-family: Trebuchet MS;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.p1
+{
+font-family: cursive;
+    font-size: 35px;
+    font-weight: bold;
+    margin: -56px 0 0 500px;
+	}	
+.p2
+{
+background-color: red;
+    color: white;
+    font-family: Trebuchet MS;
+    font-size: 13px;
+    font-weight: bold;
+    margin: 5px 586px 0 590px;
+}
+.end1
+{
+}
+.div2
+{
+width:80px;
+height:60px;
+border:1px solid;
+}
+
+.div3
+{
+ border: 1px dotted;
+    height: 412px;
+    margin: 25px 0 0 230px;
+    width: 690px;
+	background-color:white;
+	 box-shadow: 3px 3px 1px 1px;
+}
+.table1
+{
+   margin: 68px 0 0 231px;
+}
+.p3
+{
+font-family: Trebuchet MS;
+font-weight:bold;
+}
+.p4
+{
+font-family: "Trebuchet MS";
+    margin: -18px 0 0 38px;
+}

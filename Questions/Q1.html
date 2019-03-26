@@ -1,0 +1,177 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="../style.css" />
+<title>
+</title>
+<script type = "text/javascript" >
+    history.pushState(null, null, 'Q1.html');
+    window.addEventListener('popstate', function(event) {
+    history.pushState(null, null, 'Q1.html');
+    });
+	
+	
+    </script>
+	
+<script type="text/javascript">
+		
+			var countmarks=0;
+				sessionStorage.setItem("page1",countmarks);
+				//alert(sessionStorage.getItem("page1"));
+			
+	function save()
+		{
+			
+	
+	
+	var x=document.getElementById("fo1").elements['q1'];
+	var y=document.getElementById("fo1").elements['q2'];
+	var ans;
+	
+	for(var i=0;i<x.length;i++)
+	{
+		if(x[i].checked)
+		{
+		
+		ans=x[i].value;
+			
+		if(ans=="T")
+		{
+			countmarks++;
+			break;
+			
+		}
+		
+		}
+	}
+	
+	
+	
+	
+	
+	for(var i=0;i<y.length;i++)
+	{
+		if(y[i].checked)
+		{
+		
+		ans=y[i].value;
+			
+		if(ans=="T")
+		{
+			countmarks++;
+			break;
+			
+		}
+		
+		}
+	}
+	
+	
+	
+	sessionStorage.setItem("page1",countmarks);
+	
+
+			sessionStorage.getItem("page1");
+			
+			}
+
+</script>
+<style>
+button {
+  border: 0;
+  background: #0087cc;
+  border-radius: 4px;
+  box-shadow: 0 5px 0 #006599;
+  color: #fff;
+  cursor: pointer;
+  font: inherit;
+  margin: 0;
+  outline: 0;
+  padding: 12px 20px;
+  transition: all .1s linear;
+}
+button:active {
+  box-shadow: 0 2px 0 #006599;
+  transform: translateX(3px);
+}
+
+
+.line
+{
+  background-color: #e2e2e2;
+    border: 1px solid;
+    height: 507px;
+    margin: 0 949px 0 83px;
+}
+
+
+</style>
+</head>
+<body style="background-color:snow">
+
+<div class="div3">
+
+<form name="fo1" id="fo1">
+
+<table border="0" align="center" class="table1">
+
+<tr>
+<td><p class="p3">Q1. Which one of these is an example of Half-Duplex Communication system?</p></td>
+</tr>
+
+
+
+
+<tr>
+<td><input type="radio" value="F" name="q1"/><p class="p4">Telephone</p></td>
+</tr>
+
+<tr>
+<td><input type="radio" value="F" name="q1"/><p class="p4">Pager</p></td>
+</tr>
+
+
+<tr>
+<td><input type="radio" value="T" name="q1"/><p class="p4">Walkie Talkie</p></td>
+</tr>
+
+<tr>
+<td><input type="radio" value="F" name="q1"/><p class="p4">Both Pager and Telephone</p></td>
+</tr>
+
+
+<p>&nbsp;</p>
+  <tr>
+    <td><p class="question">
+        <p class="p3">Q2. What is the Full Form of DVD</p></td>
+  </tr>
+  <tr>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+  </tr>
+  <tr>
+    <td><input type="radio" value="T" name="q2"/>
+        <p class="p4">Digital Versatile Disc </p></td>
+  </tr>
+  <tr>
+    <td><input type="radio" value="F" name="q2"/>
+        <p class="p4">Digital Video Disc </p></td>
+  </tr>
+  <tr>
+    <td><input type="radio" value="F" name="q2"/>
+        <p class="p4">Digital Vector Disc</p></td>
+  </tr>
+</table>
+
+
+
+</form>
+<form id="f1" action="Q2.html">
+  <button type="submit" onClick="save()" name="next" style="margin: 84px 0 0 348px;">Next</button>
+</form>
+
+
+</body>
+</html>

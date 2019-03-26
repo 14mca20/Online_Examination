@@ -1,0 +1,163 @@
+<html>
+
+<head>
+
+<script>
+
+function validate()
+{
+	
+	if(document.form1.sname.value=="")
+	{
+		alert("Student Name is NULL");
+	}
+	else if(document.form1.cname.value=="")
+	{
+		alert("City is NULL");
+	}
+	else if(document.form1.rno.value=="")
+	{
+		alert("Roll no is NULL");
+	}
+
+}
+</script>
+
+
+
+
+<link href="styleIcard.css" rel="stylesheet" />
+
+
+<title>Student Information System</title>
+</head>
+<body style=" background: none repeat scroll 0 0 papayawhip;">
+
+<div class="div1">
+
+<h1 class="h1">Student Information System</h1>
+
+<hr class="hr1" />
+<hr class="hr2" />
+<img src="Images/nulogo.jpg" class="nulogo" />
+
+<div class="div2">
+
+<p class="p1">Please Fill all the Students Details</p>
+<p class="p2">* Mandatory</p>
+<form action="" method="post" name="form1">
+<table border="0" class="table1" width="490">
+<tr>
+<td class="family">Students Name</td>
+<td><input type="text" name="sname" placeholder="First Middle Last" max="30" maxlength="30" size="40" id="sname"/></td>
+<td style="color:red">*</td>
+
+<td rowspan="4" style="border:1px dotted">Photograph</td>
+</tr>
+
+<tr>
+<td class="family">Roll No</td>
+<td><input type="text" name="roll" placeholder="Enter Alloted Roll no"  maxlength="7"  size="40" id="rno"/></td>
+<td style="color:red">*</td>
+</tr>
+
+
+<tr>
+<td class="family">Gender</td>
+<td><input type="radio" name="male" />Male <input type="radio" name="female" />Female</td>
+<td style="color:red">*</td>
+</tr>
+
+<tr>
+<td class="family">City</td>
+<td><input type="text" name="city" placeholder="Enter Permanent City " maxlength="15"  size="40" id="cname"/></td>
+<td style="color:red">*</td>
+</tr>
+
+<tr>
+<td class="family">Blood Group</td>
+<td><input type="text" name="bg" placeholder="Blood Group"  maxlength="3"  size="40"/></td>
+<td style="color:red">*</td>
+<td><input type="submit" name="photo"  value="Upload" /></td>
+</tr>
+
+<tr>
+<td class="family">College Name</td>
+<td>
+<select name="college">
+<option value="INSTITUTE_OF_TECHNOLOGY">INSTITUTE OF TECHNOLOGY</option>
+<option value="INSTITUTE_OF_LAW">INSTITUTE OF LAW</option>
+<option value="INSTITUTE_OF_PHARMACY">INSTITUTE OF PHARMACY</option>
+<option value="INSTITUTE_OF_DIPLOMA">INSTITUTE OF DIPLOMA STUDIES</option>
+<option value="INSTITUTE_OF_ARCHITECTURE">INSTITUTE OF ARCHITECTURE</option>
+</select>
+</td>
+<td style="color:red">*</td>
+</tr>
+
+
+
+<tr>
+<td class="family">Course</td>
+<td>
+<select name="course">
+<option value="B.Tech">B.Tech</option>
+<option value="M.Tech">M.Tech</option>
+<option value="MCA">MCA</option>
+<option value="LAW">LAW</option>
+<option value="ARCHITECTURE">ARCHITECTURE</option>
+<option value="PHARMACY">PHARMACY</option>
+<option value="DIPLOMA">DIPLOMA</option>
+</select></td>
+<td style="color:red">*</td>
+</tr>
+
+<tr>
+<td class="family">Batch</td>
+<td>
+<select name="batch">
+<option value="2012">2012</option>
+<option value="2013">2013</option>
+<option value="2014">2014</option>
+</select>
+</td>
+<td style="color:red">*</td>
+</tr>
+
+<tr>
+<td class="family">Student Contact</td>
+<td><input type="text" name="conStu" placeholder="Enter Student's no"  maxlength="10"  size="40" ""required="required" pattern="[0-9]"/></td>
+<td style="color:red">*</td>
+</tr>
+
+
+<tr>
+<td class="family">Parent Contact</td>
+<td><input type="text" name="conStu" placeholder="Enter Parent's no" maxlength="10" size="40"/></td>
+<td style="color:red">*</td>
+</tr>
+
+<tr>
+<td class="family">Email</td>
+<td><input type="email" placeholder="Nirma Email id"  maxlength="23" size="40"/></td>
+<td style="color:red">*</td>
+
+</tr>
+
+<tr>
+<td class="family">Address</td>
+<td><textarea placeholder="Address"></textarea></td>
+<td style="color:red">*</td>
+</tr>
+
+<tr>
+<td></td>
+<td><input type="submit" name="s1" value="Submit"  onClick="validate()"/><input type="reset" value="Reset" /></td>
+</tr>
+</table>
+</form>
+
+</div>
+</div>
+</body>
+</html>

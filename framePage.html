@@ -1,0 +1,43 @@
+ <html>
+<head >
+<title>Entrance Examination</title>
+<script src="Scripts/timer.js" type="text/javascript">
+</script>
+
+
+<script type="text/javascript">
+
+	var getuserinfo=sessionStorage.getItem("userinfo");
+	
+//	alert(getuserinfo);
+//	alert(location.href);
+//	window.location="index.html";
+	
+		if(getuserinfo==null || getuserinfo=="")
+		{
+			window.location="index.html";
+			
+			
+			
+		}
+	
+</script>
+
+</head>
+
+<frameset rows="15%,*">
+<frame  src="title.html" scrolling="no" noresize/>
+
+<frameset cols="78%,*">
+<frame name="frame1" src="Questions/Q1.html"/>
+
+<frame scrolling="no" noresize src="timer.html"/ >
+
+</frameset>
+</frameset>
+
+<noframes>
+Kindly change your browser as the current browser is not able to render frames!
+</noframes>
+
+</html>

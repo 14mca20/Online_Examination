@@ -1,0 +1,200 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="../style.css" />
+<title>
+</title>
+<style>
+button {
+  border: 0;
+  background: #0087cc;
+  border-radius: 4px;
+  box-shadow: 0 5px 0 #006599;
+  color: #fff;
+  cursor: pointer;
+  font: inherit;
+  margin: 0;
+  outline: 0;
+  padding: 12px 20px;
+  transition: all .1s linear;
+}
+button:active {
+  box-shadow: 0 2px 0 #006599;
+  transform: translateX(3px);
+}
+
+.line
+{
+  background-color: #e2e2e2;
+    border: 1px solid;
+    height: 507px;
+    margin: 0 949px 0 83px;
+	width:11px;
+}
+
+</style>
+<script type="text/javascript">
+		var countmarks=0;
+				sessionStorage.setItem("page4",countmarks);
+		
+		
+	function save()
+		{
+			
+		
+			var x=document.getElementById("fo1").elements['q7'];
+	var y=document.getElementById("fo1").elements['q8'];
+	var ans;
+	
+	for(var i=0;i<x.length;i++)
+	{
+		if(x[i].checked)
+		{
+		
+		ans=x[i].value;
+			
+		if(ans=="T")
+		{
+			countmarks++;
+			break;
+			
+		}
+		
+		}
+	}
+	
+	
+	
+	
+	
+	for(var i=0;i<y.length;i++)
+	{
+		if(y[i].checked)
+		{
+		
+		ans=y[i].value;
+			
+		if(ans=="T")
+		{
+			countmarks++;
+			break;
+			
+		}
+		
+		}
+	}
+	
+	
+	
+	sessionStorage.setItem("page4",countmarks);
+	
+			sessionStorage.getItem("page4");
+			
+		
+			}
+
+</script>
+
+</head>
+<body style="background-color:snow">
+
+<div class="div3">
+
+<form id="fo1">
+
+<table border="0" align="center" class="table1">
+
+<tr>
+<td><p class="question">
+<p class="p3">Q7.Which one of these is not an Application Layer protocol? </p></td>
+</tr>
+
+<tr>
+<td></td>
+</tr>
+
+<tr>
+<td></td>
+</tr>
+
+<tr>
+<td><input type="radio" value="F" name="q7"/>
+<p class="p4">HTTP</p></td>
+</tr>
+
+<tr>
+<td><input type="radio" value="T" name="q7"/>
+<p class="p4">UDP </p></td>
+</tr>
+
+<tr>
+<td><input type="radio" value="F" name="q7"/>
+<p class="p4">SMTP</p></td>
+</tr>
+
+<tr>
+<td><input type="radio" value="F" name="q7"/>
+<p class="p4">DHCP </p></td>
+</tr>
+
+<tr>
+<td><input type="radio" value="F" name="q7"/>
+<p class="p4">FTP </p></td>
+</tr>
+
+
+<tr>
+<td><p class="question">
+<p class="p3">Q8. Full form of DDR RAM? </p></td>
+</tr>
+
+<tr>
+<td></td>
+</tr>
+
+<tr>
+<td></td>
+</tr>
+
+<tr>
+<td height="25"><input type="radio" value="T" name="q8"/>
+  <p class="p4">Double Data Rate Random Access Memory </p></td>
+</tr>
+
+<tr>
+<td><input type="radio" value="F" name="q8"/>
+<p class="p4">Double Dump Rate Random Access Memory </p></td>
+</tr>
+
+<tr>
+<td><input type="radio" value="F" name="q8"/>
+<p class="p4">Dual Data Rate Random access Memory </p></td>
+</tr>
+
+<tr>
+<td><input type="radio" value="F" name="q8"/>
+<p class="p4">Dual Data rate Read only Memory </p></td>
+</tr>
+
+<tr>
+  <td>&nbsp;</td>
+</tr>
+
+
+</table>
+
+<p>&nbsp;</p>
+</form>
+
+<form action="Q3.html">
+<button type="submit"  name="prev"  style="margin: -10px 0 -36px 262px;">Prev</button>
+</form>
+
+<form action="Q5.html">
+<button type="submit" onClick="save()" name="next" style="margin: -25px 0 0 348px"/>Next</button>
+
+</form>
+
+
+</p>
+</body>
+</html>

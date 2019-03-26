@@ -1,0 +1,498 @@
+<html>
+<title>Results</title>
+<script type = "text/javascript" >
+    history.pushState(null, null, 'results.html');
+    window.addEventListener('popstate', function(event) {
+    history.pushState(null, null, 'results.html');
+    });
+	
+	
+    </script>
+<head>
+
+<style>
+
+.p4{
+	background-color: green;
+    color: white;
+    font-weight: bolder;
+
+}
+
+.p2
+{ font-size: xx-large;
+    font-weight: bold;
+    margin: 44px 0 -29px 391;
+    text-align: -moz-left;
+    text-decoration: -moz-anchor-decoration;
+}
+
+.p3
+{
+font-family: fantasy;
+    font-size: 21px;
+    font-weight: bold;
+}
+.div1
+{
+ border: 1px solid;
+    box-shadow: 2px 4px 1px 1px;
+    margin: 15px 205px 0 240px;
+	background-color:white;
+
+}
+
+.p5
+{
+font-family: Helvetica;
+}
+
+</style>
+<script type="text/javascript">
+	
+	var finalmarks=0;
+	
+			function change()
+			{	
+			
+			for(var i=1;i<=5;i++)
+		{
+			//alert(sessionStorage.getItem("page"+i));
+			if(sessionStorage.getItem("page"+i)==null)
+			{
+			
+			}
+			else
+			{
+			
+			finalmarks+=parseInt(sessionStorage.getItem("page"+i));
+			}
+			
+		}
+			
+			
+			
+		//	alert("Marks are "+finalmarks);
+	//	alert(document.getElementById("grade").innerHTML);
+		
+			
+			if(finalmarks==null || finalmarks==0)
+			{
+		document.getElementById("presult").style.color="red";
+		document.getElementById("presult").innerHTML="You did not pass the exam!";									
+		document.getElementById("grade").innerHTML= "You Scored ";
+			
+		document.getElementById("dyna").innerHTML="0/10" ;
+			
+			
+				
+			}	
+			else if(finalmarks>=5)
+			{
+				document.getElementById("presult").style.color="green";
+				document.getElementById("presult").innerHTML="Congratulations! You have passed the examination";	
+			document.getElementById("grade").innerHTML= "You Scored ";
+			document.getElementById("dyna").innerHTML=finalmarks + "/10";
+			
+			
+			}
+			else if(finalmarks<5)
+			{
+					document.getElementById("presult").style.color="red";
+				document.getElementById("presult").innerHTML="You did not pass the exam!";	
+			document.getElementById("grade").innerHTML="You Scored ";
+						document.getElementById("dyna").innerHTML=finalmarks + "/10";
+			
+			
+			}
+			
+			}
+			
+if(finalmarks<5)
+{
+	document.getElementById("a1").style.color="white";
+}
+
+</script>
+</head>
+
+
+<link rel="stylesheet" href="style.css" type="text/css">
+
+<body>
+<img src="Images/logo.jpg"   style="position:fixed"/>
+<img src="logo2.png" style="margin: 0 0 0 1064px;width: 50px;">
+<p class="p1">NIRMA <font color="#F1DA8A">UNIVERSITY</font></p>
+<p class="p2">INSTITUTE OF TECHNOLOGY</p>
+<hr style="">
+
+
+<body onLoad="change()" style="background-color:snow">
+
+<table align="center" border="1"  cellpadding="10" title="Grades" >
+
+<tr>
+
+
+<td height="54">
+<p id="grade" style="font-weight:bold;font-size:large;font-family:'Times New Roman', Times, serif;color:#000000" align="center"> </p>
+</td>
+<td id="dyna" style="font-weight:bold;font-size:large;font-family:'Times New Roman', Times, serif;color:#000000" align="center">
+
+</td>
+</tr>
+
+</table>
+
+
+<p>&nbsp;</p>
+<p id="presult" style="font-weight:bold;font-size:large;margin: -50px 0 0;text-decoration:blink;" align="center"></p>
+
+
+<div class="div1">
+<p class="p2">SOLUTIONS</p>
+<table id="tbl" border="1" align="center">
+<tr>
+<td><p class="p3">Q1.  Which one of these is an example of Half-Duplex Communication system?</p></td>
+</tr>
+
+
+
+
+<tr>
+<td><p class="p5">(a) Telephone</p></td>
+</tr>
+
+<tr>
+<td><p class="p5">(b) Pager</p></td>
+</tr>
+
+
+<tr>
+<td><p class="p4"> (c) Walkie Talkie</p></td>
+</tr>
+
+<tr>
+<td><p class="p5" > (d) Both Pager and Telephone</p></td>
+</tr>
+
+
+<p>&nbsp;</p>
+  <tr>
+    <td><p class="question">
+        <p class="p3">Q2. What is the Full Form of DVD</p></td>
+  </tr>
+  <tr>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+  </tr>
+  <tr>
+    <td>
+        <p class="p4"> (a) Digital Versatile Disc </p></td>
+  </tr>
+  <tr>
+    <td>
+        <p  class="p5"> (b) Digital Video Disc </p></td>
+  </tr>
+  <tr>
+    <td>
+        <p  class="p5"> (c) Digital Vector Disc </p></td>
+  </tr>
+
+
+
+<tr>
+<td><p class="question">
+<p class="p3">Q3.Television REMOTE uses which technology for Communication?</p></td>
+</tr>
+
+<tr>
+<td></td>
+</tr>
+
+<tr>
+<td></td>
+</tr>
+
+<tr>
+<td><p class="p5" > (a) Laser</p></td>
+</tr>
+
+<tr>
+<td><p class="p5" > (b) Radio Frequency</p></td>
+</tr>
+
+<tr>
+<td><p class="p4"> (c) Infrared</p></td>
+</tr>
+
+<tr>
+<td><p  class="p5"> (d) Digital Signalling</p></td>
+</tr>
+
+
+
+
+
+
+<tr>
+<td><p class="question">
+<p class="p3">Q4. Routing Table is updated every ? </p></td>
+</tr>
+
+<tr>
+<td></td>
+</tr>
+
+<tr>
+<td></td>
+</tr>
+
+<tr>
+<td>
+<p class="p4"> (a) 30 Seconds </p></td>
+</tr>
+
+<tr>
+<td>
+<p class="p5" > (b) 10 Seconds </p></td>
+</tr>
+
+<tr>
+<td>
+<p class="p5" > (c) 60 Seconds </p></td>
+</tr>
+
+<tr>
+<td>
+<p  class="p5"> (d) Not Updated </p></td>
+</tr>
+
+<tr>
+  <td>&nbsp;</td>
+</tr>
+
+
+<tr>
+<td><p class="question">
+<p class="p3">Q5. A latest Domain created By INFIBEAM is?</p></td>
+</tr>
+
+<tr>
+<td></td>
+</tr>
+
+<tr>
+<td></td>
+</tr>
+
+<tr>
+<td><p class="p4"> (a) .ooo</p></td>
+</tr>
+
+<tr>
+<td><p class="p5" > (b) .ind</p></td>
+</tr>
+
+<tr>
+<td><p  class="p5"> (c) .zig</p></td>
+</tr>
+
+<tr>
+<td><p class="p5" > (d) none</p></td>
+</tr>
+
+<tr>
+<td><p class="question">
+<p class="p3">Q6. Full form of UPS is? </p></td>
+</tr>
+
+<tr>
+<td></td>
+</tr>
+
+<tr>
+<td></td>
+</tr>
+
+<tr>
+<td>
+<p class="p4"> (a) Uninterrupted Power Supply </p></td>
+</tr>
+
+<tr>
+<td>
+<p  class="p5"> (b) Unanonimous Power Supply </p></td>
+</tr>
+
+<tr>
+<td>
+<p  class="p5"> (c) Untwisted Power Switch </p></td>
+</tr>
+
+<tr>
+<td><p  class="p5"> (d) none</p></td>
+</tr>
+
+<tr>
+  <td>&nbsp;</td>
+</tr>
+<tr>
+<td><p class="question">
+<p class="p3">Q7.Which one of these is not an Application Layer protocol? </p></td>
+</tr>
+
+<tr>
+<td></td>
+</tr>
+
+<tr>
+<td></td>
+</tr>
+
+<tr>
+<td>
+<p > (a) HTTP</p></td>
+</tr>
+
+<tr>
+<td>
+<p class="p4"> (b) UDP </p></td>
+</tr>
+
+<tr>
+<td>
+<p  class="p5"> (c) SMTP</p></td>
+</tr>
+
+<tr>
+<td>
+<p  class="p5"> (d) DHCP </p></td>
+</tr>
+
+<tr>
+<td>
+<p class="p5" > (e) FTP </p></td>
+</tr>
+
+
+<tr>
+<td><p class="question">
+<p class="p3">Q8. Full form of DDR RAM? </p></td>
+</tr>
+
+<tr>
+<td></td>
+</tr>
+
+<tr>
+<td></td>
+</tr>
+
+<tr>
+<td height="25">
+  <p class="p4"> (a) Double Data Rate Random Access Memory </p></td>
+</tr>
+
+<tr>
+<td>
+<p class="p5" > (b) Double Dump Rate Random Access Memory </p></td>
+</tr>
+
+<tr>
+<td>
+<p  class="p5"> (c) Dual Data Rate Random access Memory </p></td>
+</tr>
+
+<tr>
+<td>
+<p class="p5" > (d) Dual Data rate Read only Memory </p></td>
+</tr>
+
+<tr>
+  <td>&nbsp;</td>
+</tr>
+<tr>
+<td><p class="question">
+<p class="p3">Q9. Parralel Processing is a concept related to?</p></td>
+</tr>
+
+<tr>
+<td></td>
+</tr>
+
+<tr>
+<td></td>
+</tr>
+
+<tr>
+<td height="25">
+  <p class="p4"> (a) Operating System </p></td>
+</tr>
+
+<tr>
+<td>
+<p  class="p5"> (b) Networking</p></td>
+</tr>
+
+<tr>
+<td>
+<p class="p5" > (c) Memory Management </p></td>
+</tr>
+
+<tr>
+<td>
+<p class="p5" > (d) CPU </p></td>
+</tr>
+
+<tr>
+  <td>&nbsp;</td>
+</tr>
+
+
+
+
+
+
+<tr>
+<td><p class="question">
+<p class="p3">Q10. C++ Language is Developed By? </p></td>
+</tr>
+
+<tr>
+<td></td>
+</tr>
+
+<tr>
+<td></td>
+</tr>
+
+<tr>
+<td height="25">
+  <p  class="p5"> (a) E Balagurusamy </p></td>
+</tr>
+
+<tr>
+<td>
+<p class="p4"> (b) Bjarne Stroustroup </p></td>
+</tr>
+
+<tr>
+<td>
+<p  class="p5"> (c) AT &amp; T Bell Laboratories </p></td>
+</tr>
+
+<tr>
+<td>
+<p  class="p5"> (d) All of the above </p></td>
+</tr>
+
+<tr>
+  <td>&nbsp;</td>
+</tr>
+</table>
+</div>
+</body>
+</html>

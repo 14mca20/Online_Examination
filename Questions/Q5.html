@@ -1,0 +1,239 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="../style.css" />
+<title>
+</title>
+<style>
+button {
+  border: 0;
+  background: #0087cc;
+  border-radius: 4px;
+  box-shadow: 0 5px 0 #006599;
+  color: #fff;
+  cursor: pointer;
+  font: inherit;
+  margin: 0;
+  outline: 0;
+  padding: 12px 20px;
+  transition: all .1s linear;
+}
+button:active {
+  box-shadow: 0 2px 0 #006599;
+  transform: translateX(3px);
+}
+
+.line
+{
+  background-color: #e2e2e2;
+    border: 1px solid;
+    height: 507;
+    margin: 0 949px 0 83px;
+}
+
+</style>
+<script type="text/javascript">
+		
+		var countmarks=0;
+				sessionStorage.setItem("page5",countmarks);
+		
+		var finalmarks=0;
+		
+	function save()
+		{
+			
+		
+			var x=document.getElementById("fo1").elements['q9'];
+	var y=document.getElementById("fo1").elements['q10'];
+	var ans;
+	
+	for(var i=0;i<x.length;i++)
+	{
+		if(x[i].checked)
+		{
+		
+		ans=x[i].value;
+			
+		if(ans=="T")
+		{
+			countmarks++;
+			break;
+			
+		}
+		
+		}
+	}
+	
+	
+	for(var i=0;i<y.length;i++)
+	{
+		if(y[i].checked)
+		{
+		
+		ans=y[i].value;
+			
+		if(ans=="T")
+		{
+			countmarks++;
+			break;
+			
+		}
+		
+		}
+	}
+	
+	
+	
+	sessionStorage.setItem("page5",countmarks);
+	
+		
+	
+	
+	
+	
+	//	alert(finalmarks);
+	
+	
+			
+		
+		
+		
+			//window.location.assign("results.html");
+		
+			self.parent.location="results.html";
+			
+
+			}
+			
+	function checkConfirm()
+	{
+		var c=document.getElementById('check');
+		var s=document.getElementById('end');
+		
+		
+		if(c.checked)
+		{
+			s.disabled=false;
+		}
+		else
+		{
+			s.disabled=true;
+		}	
+	}
+
+
+</script>
+
+</head>
+<body style="background-color:snow">
+
+<div class="div3">
+
+<form id="fo1">
+
+<table width="284" border="0" align="center" class="table1">
+
+<tr>
+<td><p class="question">
+<p class="p3">Q9. Parralel Processing is a concept related to?</p></td>
+</tr>
+
+<tr>
+<td></td>
+</tr>
+
+<tr>
+<td></td>
+</tr>
+
+<tr>
+<td height="25"><input type="radio" value="T" name="q9"/>
+  <p class="p4">Operating System </p></td>
+</tr>
+
+<tr>
+<td><input type="radio" value="F" name="q9"/>
+<p class="p4">Networking</p></td>
+</tr>
+
+<tr>
+<td><input type="radio" value="F" name="q9"/>
+<p class="p4">Memory Management </p></td>
+</tr>
+
+<tr>
+<td><input type="radio" value="F" name="q9"/>
+<p class="p4">CPU </p></td>
+</tr>
+
+<tr>
+  <td>&nbsp;</td>
+</tr>
+
+
+
+
+
+
+<tr>
+<td><p class="question">
+<p class="p3">Q10. C++ Language is Developed By? </p></td>
+</tr>
+
+<tr>
+<td></td>
+</tr>
+
+<tr>
+<td></td>
+</tr>
+
+<tr>
+<td height="25"><input type="radio" value="F" name="q10"/>
+  <p class="p4">E Balagurusamy </p></td>
+</tr>
+
+<tr>
+<td><input type="radio" value="T" name="q10"/>
+<p class="p4">Bjarne Stroustroup </p></td>
+</tr>
+
+<tr>
+<td><input type="radio" value="F" name="q10"/>
+<p class="p4">AT &amp; T Bell Laboratories </p></td>
+</tr>
+
+<tr>
+<td><input type="radio" value="F" name="q10"/>
+<p class="p4">All of the above </p></td>
+</tr>
+
+<tr>
+  <td>&nbsp;</td>
+</tr>
+
+
+</table>
+
+</form>
+
+<table>
+
+<tr>
+<td width="325">
+<form action="Q4.html">
+<button type="submit"  name="prev"  style="margin: -10px 0 -36px 262px;">Prev</button>
+</form>
+
+
+<form action="results.html">
+<input type="checkbox" id="check" style="margin:-41px 0 0 680px" onClick="checkConfirm()"/>
+
+  <input type="submit" value="End Test" id="end" onClick="save()"  disabled="disabled" style="margin: -31px 0 0 649px;;border:2px solid" />
+</form>
+
+
+</td>
+</tr>
+</table>
+</body>
+</html>

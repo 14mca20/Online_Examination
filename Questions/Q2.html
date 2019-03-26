@@ -1,0 +1,213 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="../style.css" />
+<title>
+</title>
+
+<!--
+<script type="text/javascript">
+
+alert(sessionStorage.getItem("totalmarks"));
+</script>	-->
+<style>
+button {
+  border: 0;
+  background: #0087cc;
+  border-radius: 4px;
+  box-shadow: 0 5px 0 #006599;
+  color: #fff;
+  cursor: pointer;
+  font: inherit;
+  margin: 0;
+  outline: 0;
+  padding: 12px 20px;
+  transition: all .1s linear;
+}
+button:active {
+  box-shadow: 0 2px 0 #006599;
+  transform: translateX(3px);
+}
+
+.line
+{
+  background-color: #e2e2e2;
+    border: 1px solid;
+    height: 507px;
+    margin: 0 949px 0 83px;width:11px;
+}
+
+</style>
+<script type="text/javascript">
+		
+		var countmarks=0;
+				sessionStorage.setItem("page2",countmarks);
+		//	alert(sessionStorage.getItem("page2"));
+			
+	function save()
+		{
+			
+		
+			var x=document.getElementById("fo1").elements['q3'];
+	var y=document.getElementById("fo1").elements['q4'];
+	var ans;
+	
+	for(var i=0;i<x.length;i++)
+	{
+		if(x[i].checked)
+		{
+		
+		ans=x[i].value;
+			
+		if(ans=="T")
+		{
+			countmarks++;
+			break;
+			
+		}
+		
+		}
+	}
+	
+	
+	
+	
+	
+	for(var i=0;i<y.length;i++)
+	{
+		if(y[i].checked)
+		{
+		
+		ans=y[i].value;
+			
+		if(ans=="T")
+		{
+			countmarks++;
+			break;
+			
+		}
+		
+		}
+	}
+	
+	
+	
+	sessionStorage.setItem("page2",countmarks);
+	
+			//alert(sessionStorage.getItem("totalmarks"));
+				sessionStorage.getItem("page2");
+		
+		
+			}
+
+</script>
+
+</head>
+<body style="background-color:snow">
+
+<div class="div3">
+
+<form id="fo1">
+
+<table border="0" align="center" class="table1">
+
+<tr>
+<td><p class="question">
+<p class="p3">Q3. Television REMOTE uses which technology for Communication?</p></td>
+</tr>
+
+<tr>
+<td></td>
+</tr>
+
+<tr>
+<td></td>
+</tr>
+
+<tr>
+<td><input type="radio" value="F" name="q3"/><p class="p4">Laser</p></td>
+</tr>
+
+<tr>
+<td><input type="radio" value="F" name="q3"/><p class="p4">Radio Frequency</p></td>
+</tr>
+
+<tr>
+<td><input type="radio" value="T" name="q3"/><p class="p4">Infrared</p></td>
+</tr>
+
+<tr>
+<td><input type="radio" value="F" name="q3"/><p class="p4">Digital Signalling</p></td>
+</tr>
+
+
+
+
+
+
+<tr>
+<td><p class="question">
+<p class="p3">Q4. Routing Table is updated every ? </p></td>
+</tr>
+
+<tr>
+<td></td>
+</tr>
+
+<tr>
+<td></td>
+</tr>
+
+<tr>
+<td><input type="radio" value="T" name="q4"/>
+<p class="p4">30 Seconds </p></td>
+</tr>
+
+<tr>
+<td><input type="radio" value="F" name="q4"/>
+<p class="p4">10 Seconds </p></td>
+</tr>
+
+<tr>
+<td><input type="radio" value="F" name="q4"/>
+<p class="p4">60 Seconds </p></td>
+</tr>
+
+<tr>
+<td><input type="radio" value="F" name="q4"/>
+<p class="p4">Not Updated </p></td>
+</tr>
+
+<tr>
+  <td>&nbsp;</td>
+</tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</table>
+
+</form>
+
+<form action="Q1.html"> 
+<button type="submit" name="prev"  style="margin: 48px 0 -36px 262px"> Prev </button>
+</form>
+
+<form action="Q3.html">
+<button type="submit" name="next" style="margin: -25px 0 0 348px"  onClick="save()"> Next</button>
+
+</form>
+
+</p>
+</body>
+</html>
